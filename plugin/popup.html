@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Chatbot</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            width: max-content;
+            max-width: 800px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: coral;
+        }
+
+        button[disabled] {
+            background-color: lightcoral;
+            color: white;
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: lightpink;
+        }
+
+        p {
+            font-size: medium;
+        }
+
+        textarea {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        #response {
+            background: #f1f1f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> YouTube Chatbot</h1>
+    <textarea id="question" placeholder="Ask something about the video..."></textarea>
+    <button id="askBtn">Ask AI</button>
+
+    <div id="response"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
